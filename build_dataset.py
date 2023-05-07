@@ -47,6 +47,11 @@ class Corpus:
     def read_corpus(corpus: str) -> DataFrame:
         path = 'extended-corpus'
         return pd.read_csv(os.path.join(path, corpus), converters={'essay': eval, 'competence': eval})
+    
+    @staticmethod
+    def read_prompt(prompt: str) -> DataFrame:
+        path = 'extended-corpus'
+        return pd.read_csv(os.path.join(path, prompt))
 
     @staticmethod
     def save_split(name: str, df_input: DataFrame) -> None:
