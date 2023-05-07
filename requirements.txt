@@ -1,2 +1,7 @@
 pandas
 scikit-learn
+seaborn
+spacy
+matplotlib
+nltk
+tqdm
